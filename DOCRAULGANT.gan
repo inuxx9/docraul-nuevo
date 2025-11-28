@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project" company="" webLink="http://" view-date="2025-04-01" view-index="0" gantt-divider-location="393" resource-divider-location="300" version="3.3.3316" locale="es_ES">
+    <description/>
+    <view zooming-state="default:9" id="gantt-chart">
+        <field id="tpd3" name="Nombre" width="215" order="0"/>
+        <field id="tpd4" name="Fecha de inicio" width="81" order="1"/>
+        <field id="tpd5" name="Fecha de fin" width="81" order="2"/>
+        <field id="tpd15" name="Notas" width="20" order="3"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nombre" width="210" order="0"/>
+        <field id="1" name="Función" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="659093d014f146539129d51ffb234d66" name="Analisis" meeting="false" start="2025-04-04" duration="6" complete="0" expand="true">
+            <task id="10" uid="f8cbd3c6eba04af09486932f71080ba1" name="Recopilacion de datos" meeting="false" start="2025-04-04" duration="1" complete="0" expand="true">
+                <depend id="9" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="9" uid="e5b3f196ab7a4b6298c4969e82f9852e" name="Analisis de flujo de datos" meeting="false" start="2025-04-07" duration="2" complete="0" expand="true">
+                <depend id="7" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="7" uid="6381a7423c974f27ae5660003e6327b1" name="Preparacion de la propuesta" color="#8cb6ce" meeting="false" start="2025-04-09" duration="3" complete="0" expand="true"/>
+        </task>
+        <task id="11" uid="623a95f921fb4abea1f9915a99d580d1" name="Diseño" meeting="false" start="2025-05-09" duration="38" complete="0" expand="true">
+            <task id="12" uid="87583f3a9ff347568b338c161832b89d" name="Diseño de la entrada de datos" meeting="false" start="2025-05-09" duration="8" complete="0" expand="true">
+                <depend id="13" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="13" uid="0f58978526ec4d27bef208c7ad2457a7" name="Diseño de las entradas" meeting="false" start="2025-05-21" duration="9" complete="0" expand="true">
+                <depend id="14" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="14" uid="96a90c12425549f5abbf63b643c560f1" name="Diseño de las salidas" meeting="false" start="2025-06-03" duration="10" complete="0" expand="true">
+                <depend id="15" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="15" uid="f9d89e29a2584d8693f28e11255be647" name="Organizacion de los datos" meeting="false" start="2025-06-17" duration="11" complete="0" expand="true"/>
+        </task>
+        <task id="20" uid="27fddee725404b6aa2a96e6346fbd962" name="Modelado" meeting="false" start="2025-06-13" duration="45" complete="0" expand="true">
+            <task id="24" uid="0115a46d7f1449eeb0858954a5d676bc" name="Diagramas UML" meeting="false" start="2025-06-13" duration="14" complete="0" expand="true">
+                <depend id="23" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="23" uid="f86bfdd8ce8a45ad962e2bbb8a78b425" name="Casos de uso" meeting="false" start="2025-07-03" duration="15" complete="0" expand="true">
+                <depend id="21" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="21" uid="ccd85864e6e145b588f524799a5f11ca" name="Prototipo de interfaz" meeting="false" start="2025-07-24" duration="16" complete="0" expand="true"/>
+        </task>
+        <task id="25" uid="c3bce936c96a470dbd274eaf5f2008cc" name="Documentacion" meeting="false" start="2025-07-11" duration="21" complete="0" expand="true">
+            <task id="27" uid="c93b7192b4014060bcd234586470412a" name="Informe del sistema" meeting="false" start="2025-07-11" duration="10" complete="0" expand="true">
+                <depend id="26" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="26" uid="0a6880288a6f4e56b9786b8f16aa3c94" name="Reporte tecnico" meeting="false" start="2025-07-25" duration="11" complete="0" expand="true"/>
+        </task>
+        <task id="30" uid="2c2b920278464acdb3148e0e8237690e" name="Implementacion" meeting="false" start="2025-08-01" duration="61" complete="0" expand="true">
+            <task id="31" uid="62feb83d6919458abe20465adccad7c8" name="Implementacion del sistema" meeting="false" start="2025-08-01" duration="61" complete="0" expand="true"/>
+        </task>
+        <task id="32" uid="6a3296a2161e48a2883d4f2f4412a921" name="Evaluacion" meeting="false" start="2025-10-24" duration="16" complete="0" expand="true">
+            <task id="33" uid="6b161b59c9ff4263bab5be3933d948ea" name="Evaluacion y pruebas" meeting="false" start="2025-10-24" duration="10" complete="0" expand="true"/>
+            <task id="34" uid="82b39bf39c004f21b1bb0d702f71c1dc" name="Ajustes finales" meeting="false" start="2025-11-14" duration="1" complete="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="3" name="Maradona Facundo" function="Default:0" contacts="" phone=""/>
+        <resource id="1" name="Joaquin Leguizamon " function="Default:0" contacts="" phone=""/>
+        <resource id="2" name="Granada Martin" function="Default:0" contacts="" phone=""/>
+        <resource id="0" name="Brian Caceres" function="Default:1" contacts="" phone=""/>
+    </resources>
+    <allocations/>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
